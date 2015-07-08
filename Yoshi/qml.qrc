@@ -1,0 +1,32 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>GameView.qml</file>
+        <file>Yoshi.qml</file>
+        <file>PlayerEvent.qml</file>
+        <file>Artwork/yoshi - standing.png</file>
+        <file>Artwork/yoshi - thinking.png</file>
+        <file>Artwork/yoshi - idle.png</file>
+        <file>Artwork/yoshi - waiting.png</file>
+        <file>YoshiAnimation.qml</file>
+        <file>YoshiScripts.js</file>
+        <file>Artwork/yoshi - walking.png</file>
+        <file>Sounds/Music/Super Mario World (SNES) Music - Title Theme.mp3</file>
+        <file>Stage.qml</file>
+        <file>Artwork/yoshi - jumping.png</file>
+        <file>Artwork/yoshi - falling.png</file>
+        <file>Artwork/yoshi - jumping - max.png</file>
+        <file>Artwork/yoshi - landing.png</file>
+        <file>Artwork/Stage/yoshi-stage.png</file>
+        <file>Artwork/Stage/ground-left.png</file>
+        <file>Artwork/Stage/ground-middle.png</file>
+        <file>Artwork/Stage/ground-right.png</file>
+        <file>Artwork/yoshi - walking - mirror.png</file>
+        <file>Artwork/yoshi - falling - mirror.png</file>
+        <file>Artwork/yoshi - idle - mirror.png</file>
+        <file>Artwork/yoshi - jumping - max - mirror.png</file>
+        <file>Artwork/yoshi - jumping - mirror.png</file>
+        <file>Artwork/yoshi - waiting - mirror.png</file>
+        <file>Artwork/yoshi - landing - mirror.png</file>
+    </qresource>
+</RCC>
