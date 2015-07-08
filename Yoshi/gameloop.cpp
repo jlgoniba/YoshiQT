@@ -28,7 +28,7 @@ void GameLoop::moveRight()
 //    if (yoshi->property("x").toInt() + 5 < 640 * 0.75 - yoshi->property("width").toInt() / 2) {
 //        yoshi->setProperty("x", yoshi->property("x").toInt() + 5);
 //    }
-    qDebug() << "ylol";
+    qDebug() << "moveRight slot";
 }
 
 void GameLoop::moveLeft()

@@ -15,7 +15,7 @@ Item {
 
     Row {
         id: ground
-        width: 5120
+        width: 98 * 5
         y: stage.height - height
         Image {
             width: 8
@@ -23,7 +23,32 @@ Item {
             source: "Artwork/Stage/ground-left.png"
         }
         Repeater {
-            model: ground.width / 98
+            model: 5
+            Image {
+                width: 98
+                height: 42
+                source: "Artwork/Stage/ground-middle.png"
+            }
+        }
+        Image {
+            width: 8
+            height: 42
+            source: "Artwork/Stage/ground-right.png"
+        }
+    }
+
+    Row {
+        id: ground2
+        width: 5120
+        x: ground.x + ground.width + 30
+        y: stage.height - height
+        Image {
+            width: 8
+            height: 42
+            source: "Artwork/Stage/ground-left.png"
+        }
+        Repeater {
+            model: ground2.width / 93
             Image {
                 width: 98
                 height: 42

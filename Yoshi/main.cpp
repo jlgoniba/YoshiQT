@@ -13,8 +13,9 @@ int main(int argc, char *argv[])
     QQmlApplicationEngine engine;
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
-    QQuickView view(QUrl("qrc:/GameView.qml"));
-    QObject *gameView = view.rootObject();
+    QQuickView *view = new QQuickView();
+    view->setSource(QUrl(QStringLiteral("qrc:/GameView.qml")));
+    QObject *gameView = dynamic_cast<QObject*>(view->rootObject());
     QObject *yoshi = gameView->findChild<QObject*>(QString("yoshi"));
     qDebug() << yoshi;
     qDebug() << yoshi->property("x");

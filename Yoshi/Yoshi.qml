@@ -29,6 +29,8 @@ Item {
         repeat: true
         running: true
         onTriggered: {
+//            sendSignal();
+//            moveRightSignal();
         }
     }
 
@@ -41,7 +43,14 @@ Item {
         anchors.fill: parent;
         onClicked: {
             moveRightSignal();
+            moveRightSignal();
+//            sendSignal();
         }
+    }
+
+    function sendSignal() {
+        console.log("function signal");
+        moveRightSignal();
     }
 }
 
