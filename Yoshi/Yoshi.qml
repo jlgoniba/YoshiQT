@@ -1,17 +1,23 @@
 import QtQuick 2.0
 import "YoshiScripts.js" as YoshiBehavior
+import com.luis.yoshi 1.0
 
-Item {
+YoshiItem {
     id: yoshi
     objectName: "yoshi"
     width: parent.width
     height: parent.height
     x: 300
     y: stage.ground.y - height
-    signal moveRightSignal
 
     property alias idleTimer: idleTimer
     property alias animation: animation
+
+    Connections {
+        target: yoshi
+        onMoveRight: gameLoop.onMoveRight(parent)
+        onMoveLeft: gameLoop.onMoveLeft(parent)
+    }
 
     YoshiAnimation {
         id: animation
@@ -28,29 +34,6 @@ Item {
         interval: 1000
         repeat: true
         running: true
-        onTriggered: {
-//            sendSignal();
-//            moveRightSignal();
-        }
-    }
-
-    onXChanged: {
-        console.log("send it dammit!")
-        yoshi.moveRightSignal();
-    }
-
-    MouseArea {
-        anchors.fill: parent;
-        onClicked: {
-            moveRightSignal();
-            moveRightSignal();
-//            sendSignal();
-        }
-    }
-
-    function sendSignal() {
-        console.log("function signal");
-        moveRightSignal();
     }
 }
 

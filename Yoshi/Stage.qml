@@ -8,6 +8,7 @@ Item {
 
     Image {
         id: stage
+        objectName: "stage"
         width: 5120
         height: 432
         source: "Artwork/Stage/yoshi-stage.png"
@@ -15,6 +16,7 @@ Item {
 
     Row {
         id: ground
+        objectName: "ground"
         width: 98 * 5
         y: stage.height - height
         Image {

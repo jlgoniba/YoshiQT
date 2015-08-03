@@ -6,6 +6,7 @@ Item {
 
     Stage {
         id: stage
+        objectName: "stage"
         anchors.fill: parent
     }
 

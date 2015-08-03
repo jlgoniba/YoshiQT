@@ -3,7 +3,8 @@ TEMPLATE = app
 QT += qml quick widgets
 
 SOURCES += main.cpp \
-    gameloop.cpp
+    gameloop.cpp \
+    yoshi.cpp
 
 RESOURCES += qml.qrc
 
@@ -17,4 +18,5 @@ DISTFILES += \
     Artwork/yoshi - standing.png
 
 HEADERS += \
-    gameloop.h
+    gameloop.h \
+    yoshi.h
